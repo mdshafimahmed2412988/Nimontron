@@ -1,0 +1,10 @@
+export type EventRecord={id:string;slug:string;title:string;type:string;date:string;start:string;end:string;capacity:number;reserved:number;price:number;image:string;description:string;region:string;theme:string;status:string;menu:string;details:string;demo:number;location_id:string};
+export type Product={id:string;slug:string;name:string;category:string;price:number;sale_price:number|null;image:string;description:string;story:string;details:string;featured:number;active:number;demo:number};
+export type Variant={id:string;product_id:string;label:string;size:string;colour:string;stock:number;reserved:number;price:number|null};
+export type ContentRecord={id:string;type:string;title:string;body:string;image:string;published:number;data:string};
+export type Profile={id:string;email:string;name:string;role:string;preferences:string;created_at:string};
+export type CartItem={id:string;owner:string;kind:string;reference_id:string;quantity:number;data:string;created_at:string};
+export type Booking={id:string;reference:string;user_id:string;event_id:string;order_id:string;adults:number;children:number;status:string;total:number;details:string;created_at:string};
+export type Order={id:string;reference:string;user_id:string;status:string;total:number;currency:string;contact:string;delivery:string;payment_id:string|null;created_at:string;demo:number;expires_at:number;gift_code:string|null;gift_applied:number;promo_code:string|null};
+export type GuestInput={name:string;discounts:string[];photography:boolean;clothing:string;backupSize:string;colour:string;notes:string};
+export type BookingInput={eventId:string;adults:number;children:number;guests:GuestInput[];dietary:string;allergies:string;accessibility:string;marketingConsent:boolean;privatePhotographyConsent:boolean};
