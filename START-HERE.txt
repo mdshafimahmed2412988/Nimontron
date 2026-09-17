@@ -1,0 +1,12 @@
+NIMONTRON BY SANZIDA
+
+Website source export from published version 1.
+
+Includes source code, images, fonts, database migrations, seed content and documentation.
+Read docs/ARCHITECTURE.md, docs/DEPLOYMENT.md and docs/VALIDATION.md before running or deploying.
+
+This is a framework application, not a static HTML site. Install dependencies using the package manager specified in package.json. The current backend expects Cloudflare D1 and R2 and Sites authentication. Hosting elsewhere requires configuring equivalent bindings and replacing platform authentication.
+
+No secrets, installed dependencies or live customer database are included. Demo seed content is included. Real payments and emails require credentials and further validation.
+
+Published URL: https://nimontron-by-sanzida.shafitoon.chatgpt.site
